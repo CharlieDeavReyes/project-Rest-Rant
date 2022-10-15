@@ -19,9 +19,8 @@ function show (data) {
         let averageRating = Math.round(sumRatings / data.place.comments.length)
         let stars = ''
         for (let i = 0; i < averageRating; i++) {
-          stars += 'â­ï¸'
+          stars += '⭐'
         }
-      
         rating = (
           <h3>
             {stars} stars
@@ -29,6 +28,7 @@ function show (data) {
         )
         
       }
+      
       
     if (data.place.comments.length) {
         comments = data.place.comments.map(c => {
